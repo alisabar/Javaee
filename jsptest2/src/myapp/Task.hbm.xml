@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="myapp.Task" table="TASK">
+        <id name="id" type="int">
+            <column name="TASK_ID" precision="5" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="task" type="string">
+            <column name="task" length="50" not-null="true" />
+        </property> 
+         
+    </class>
+    
+</hibernate-mapping>
